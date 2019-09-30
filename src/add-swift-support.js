@@ -26,7 +26,7 @@ module.exports = context => {
   var fs = context.requireCordovaModule("fs");
   var path = context.requireCordovaModule("path");
   var xcode = context.requireCordovaModule("xcode");
-  var childProcess = context.requireCordovaModule("childProcess");
+  var childProcess = context.requireCordovaModule("child_process");
   var semver = context.requireCordovaModule("semver");
   var glob = context.requireCordovaModule("glob");
 
