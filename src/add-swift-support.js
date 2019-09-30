@@ -14,15 +14,22 @@
 *
 *  - It updates the SWIFT_VERSION to 4.0.
 */
-
+/*
 const fs = require('fs');
 const path = require('path');
 const xcode = require('xcode');
 const childProcess = require('child_process');
 const semver = require('semver');
-const glob = require('glob');
+const glob = require('glob');*/
 
 module.exports = context => {
+  var fs = context.requireCordovaModule("fs");
+  var path = context.requireCordovaModule("path");
+  var xcode = context.requireCordovaModule("xcode");
+  var childProcess = context.requireCordovaModule("childProcess");
+  var semver = context.requireCordovaModule("semver");
+  var glob = context.requireCordovaModule("glob");
+
   const projectRoot = context.opts.projectRoot;
 
   // This script has to be executed depending on the command line arguments, not
