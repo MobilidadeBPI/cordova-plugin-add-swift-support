@@ -22,13 +22,15 @@ const childProcess = require('child_process');
 const semver = require('semver');
 const glob = require('glob');*/
 
-module.exports = context => {
   const fs = context.requireCordovaModule("fs");
   const path = context.requireCordovaModule("path");
   const xcode = context.requireCordovaModule("xcode");
   const childProcess = context.requireCordovaModule("child_process");
   const semver = context.requireCordovaModule("semver");
   const glob = context.requireCordovaModule("glob");
+
+module.exports = context => {
+
 
   const projectRoot = context.opts.projectRoot;
 
