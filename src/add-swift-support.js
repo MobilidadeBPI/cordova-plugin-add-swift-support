@@ -22,15 +22,20 @@ const childProcess = require('child_process');
 const semver = require('semver');
 const glob = require('glob');*/
 
-  const fs = context.requireCordovaModule("fs");
+  /*const fs = context.requireCordovaModule("fs");
   const path = context.requireCordovaModule("path");
-  const xcode = context.requireCordovaModule("xcode");
   const childProcess = context.requireCordovaModule("child_process");
   const semver = context.requireCordovaModule("semver");
-  const glob = context.requireCordovaModule("glob");
+  const glob = context.requireCordovaModule("glob");*/
+
+const fs = require('fs');
+const path = require('path');
+const childProcess = require('child_process');
+const semver = require('semver');
+const glob = require('glob');
 
 module.exports = context => {
-
+    const xcode = context.requireCordovaModule("xcode");
 
   const projectRoot = context.opts.projectRoot;
 
